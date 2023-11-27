@@ -1,5 +1,5 @@
 # simple-slider
-slider for 3 photo with HTML | CSS | JS
+slider for 3 photo with HTML | CSS | JS (without any librares)
 
 Sources: 
 Neon background - https://www.videezy.com/abstract/45960-neon-party-background
