@@ -1,0 +1,122 @@
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-bg video {
+    width: 100vw;
+    height: 100vh;  
+    object-fit: cover;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 1100px;
+    height: 620px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.managment {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.move {
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold; 
+}
+
+.move:hover {
+    color: rgba(255, 15, 0, 1.5);
+    transform: scale(1.5);
+    text-shadow: 0 0 20px rgba(255, 15, 0, 1.5);
+}
+
+input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.rb {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('button.jpg');
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#rb1:hover {
+    box-shadow: 0 0 10px rgba(255, 15, 0, 10);
+    transform: scale(1.2);
+}
+
+#rb2:hover {
+    box-shadow: 0 0 10px rgba(255, 15, 0, 10);
+    transform: scale(1.2);
+}
+
+#rb3:hover {
+    box-shadow: 0 0 10px rgba(255, 15, 0, 10);
+    transform: scale(1.2);
+}
+
+
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .slide1{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide1{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .slide1{
+    margin-left: -40%;
+}

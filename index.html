@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-bg">
+        <video src="neon.mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="r" id="radio1" checked>
+            <input type="radio" name="r" id="radio2">
+            <input type="radio" name="r" id="radio3">
+            <div class="slide slide1">
+                <img src="supra.jpeg">
+            </div>
+            <div class="slide">
+                <img src="forgosha.jpg">
+            </div>
+            <div class="slide">
+                <img src="rrr.jpg">
+            </div>
+        </div>
+
+        <div class="managment">
+            <div class="move left">&lt;</div>
+            <label for="radio1" class="rb" id="rb1"></label>
+            <label for="radio2" class="rb" id="rb2"></label>
+            <label for="radio3" class="rb" id="rb3"></label>
+            <div class="move right">&gt;</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
